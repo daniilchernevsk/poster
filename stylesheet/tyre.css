@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    overflow: hidden; 
+    cursor: none;
+}
+
+.game {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.score {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 2vw; 
+}
+
+.ghost {
+    position: absolute;
+    width: 10vw; 
+    max-width: 60px;
+    transition: transform 0.2s;
+}
+
+.ghost:hover {
+    transform: scale(1.2);
+}
+
+.crosshair {
+    position: absolute;
+    width: 5vw; 
+    height: 5vw;
+    max-width: 40px;
+    max-height: 40px; 
+    border-radius: 50%;
+    border: 2px solid green;
+    pointer-events: none;
+}
+
+.next-screen {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 3vw; 
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .score {
+        font-size: 3vw; 
+    }
+
+    .ghost {
+        width: 15vw; 
+    }
+
+    .crosshair {
+        width: 7vw;
+        height: 7vw;
+    }
+
+    .next-screen {
+        font-size: 4vw; 
+    }
+}
+
+@media (max-width: 480px) {
+    .score {
+        font-size: 4vw;
+    }
+
+    .ghost {
+        width: 20vw; 
+    }
+
+    .crosshair {
+        width: 8vw; 
+        height: 8vw; 
+    }
+
+    .next-screen {
+        font-size: 5vw; 
+    }
+}

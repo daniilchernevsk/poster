@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мини-игра: Тир</title>
+    <link rel="stylesheet" href="stylesheet/tyre.css">
+</head>
+<body>
+    <div id="game" class="game">
+        <div class="score">Счёт: <span id="score">0</span></div>
+
+        <img src="images/ghost-1.svg" alt="Привидение 1" class="ghost" id="ghost1">
+        <img src="images/ghost-2.svg" alt="Привидение 2" class="ghost" id="ghost2">
+        <img src="images/ghost-3.svg" alt="Привидение 3" class="ghost" id="ghost3">
+
+        <div class="crosshair"></div>
+        <div class="next-screen" onclick="goToMainScreen()">→</div>
+    </div>
+
+    <script src="scripts/tyre.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Мини-игра: Пэкмен</title>
+    <link rel="stylesheet" href="stylesheet/pacman.css">
+</head>
+<body>
+    <div class="score">Счёт: <span id="pacman-score">0</span></div>
+    <div id="pacman-game" class="screen">
+        <div class="game">
+            <div id="game-board"></div>
+            <div id="pacman" class="pacman"></div>
+            <div id="ghost" class="ghost"></div>
+        </div>
+    </div>
+    <div class="next-screen" onclick="goToMainScreen()">←</div>
+
+    <script src="scripts/pacman.js"></script>
+</body>
+</html>
